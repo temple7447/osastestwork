@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <div class="header">
+        <div class="header mx-auto relative flex align-center justify-between md:justify-around">
             <div>
                 <img src="./image/logo.jpg" class="logo-image" alt="logo">
             </div>
@@ -27,13 +27,13 @@
                 </ul>
             </div>
 
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-            </button>
+            <div class="toggle-btn md:hidden my-auto mx-4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="md:hidden ">
+        <div class="md:hidden">
             <div id="menu" class="absolute flex-col items-center self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
                 <a href="#">HOME</a>
                 <a href="#">ABOUT US</a>
@@ -76,7 +76,7 @@
         <h2 class="text-yellow-400 my-3 text-center font-bold md:text-2xl wow wobble" data-wow-duration="4s">Trading Safe, Our Priority</h2>
 
         <div class="flex flex-col justify-center align-center md:flex-row">
-            <div class="flex flex-col justify-center align-center px-10 wow  fadeInUp mx-5 p-7 my-6 cardSection" id="box-one" data-wow-delay="1s">
+            <div class="flex flex-col justify-center align-center px-10 wow  fadeInUp mx-5 p-7 my-6 cardSection" id="box-one" data-wow-delay=".5s">
                 <div class="flex justify-center align-center">
                     <img src="/image/download.jpg" class="rounded-full pb-6 w-3/4" alt="">
                 </div>
@@ -84,7 +84,7 @@
                 <div class="text-center">Sell your Crypto currencies to us at Pj's Global Exchange at the very best rates and get payment instantly</div>
                 <div class="flex justify-center my-3"><a href="#" class="text-block bg-yellow-400 rounded-full px-4 py-2">Read More</a></div>
             </div>
-            <div class="flex flex-col justify-center align-center px-10 mx-5 p-7 wow fadeInUp my-6 cardSection" id="box-two" data-wow-delay="2s">
+            <div class="flex flex-col justify-center align-center px-10 mx-5 p-7 wow fadeInUp my-6 cardSection" id="box-two" data-wow-delay=".8s">
                 <div class="flex justify-center align-center">
                     <img src="/image/images.jpg" class="rounded-full pb-6 w-3/4" alt="">
                 </div>
@@ -92,7 +92,7 @@
                 <div class="text-center">Sell your Crypto currencies to us at Pj's Global Exchange at the very best rates and get payment instantly</div>
                 <div class="flex justify-center my-3"><a href="#" class="text-block bg-yellow-400 rounded-full px-4 py-2">Read More</a></div>
             </div>
-            <div class="flex flex-col justify-center align-center px-10 mx-5 p-7 wow fadeInUp  my-6 cardSection" id="box-three" data-wow-delay="3s">
+            <div class="flex flex-col justify-center align-center px-10 mx-5 p-7 wow fadeInUp  my-6 cardSection" id="box-three" data-wow-delay="1.2s">
                 <div class="flex justify-center align-center">
                     <img src="/image/images_-_2022-09-20T225901.572-removebg-preview.png" class="pb-6 w-3/4" style="border-radius: 50% ;" alt="">
                 </div>
@@ -127,7 +127,7 @@
             </div>
             <div class="flex flex-col justify-center align-center px-10 mx-5 p-7  my-6 cardSection" id="box-six">
                 <div class="flex justify-center align-center">
-                    <img src="/image/images_-_2022-09-20T225901.572-removebg-preview.png" class="pb-6 w-3/4" style="border-radius: 50% ;" alt="">
+                    <img src="/image/images_-_2022-09-20T225901.572-removebg-preview.png" class="pb-6 w-3/4" style="border-radius: 50% ;" alt="ttt">
                 </div>
                 <div class="text-blue-500 font-bold text-center my-4 text-2xl">Crypto-Currency</div>
                 <div class="text-center">Sell your Crypto currencies to us at Pj's Global Exchange at the very best rates and get payment instantly</div>
@@ -139,7 +139,7 @@
 
     <section class="webuy p-2 flex flex-col md:flex-row">
         <!-- left -->
-        <div class="md:mx-auto wow fadeInRight" id="webuyone">
+        <div class="md:mx-auto wow fadeInRight " data-wow-duration="1s" id="webuyone">
             <h1 class="text-yellow-400 font-bold px-2 text-2xl md:text-3xl">WE BUY</h1>
             <hr style="border-bottom:2px solid rgb(255, 255, 255);" class="mt-4 md:w-1/5">
             <div class="flex">
@@ -173,9 +173,9 @@
         </div>
         <!-- right -->
 
-        <div id="webuytwo" class="md:mx-auto wow fadeInLeft">
+        <div id="webuytwo" class="md:mx-auto wow fadeInLeft " data-wow-duration="1s">
             <h1 class="text-yellow-400 font-bold px-2 text-2xl md:text-3xl">WE BUY</h1>
-            <hr style="" class="mt-4 md:w-1/5 ">
+            <hr class="mt-4 md:w-1/5 ">
             <div class="flex">
                 <div class="bg-white text-center p-4 m-4">d</div>
                 <div class="  p-4">
@@ -210,7 +210,7 @@
 
     </section>
 
-    <section class="text-white flex flex-col successful text-center p-5 font-bold ">
+    <section class="text-white flex flex-col wow zoomInUp successful text-center p-5 font-bold " data-wow-duration="2s">
         <div class="flex flex-col md:flex-row md:justify-around md:align-center ">
             <div class="p-3">
                 <h2 class="text-5xl py-2">7,568+</h2>

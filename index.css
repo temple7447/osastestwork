@@ -40,9 +40,6 @@ body {
 
 .header {
     background-color: var(--background-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .frontpage {
@@ -222,4 +219,58 @@ body {
 
 .open .hanburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+/* mobile toggle */
+
+.toggle-btn {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle-btn span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #4263eb;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.toggle-btn span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 5px
+}
+
+.toggle-btn span:nth-child(2) {
+    transform: translateY(15px);
+    width: 25px;
+    left: 5px
+}
+
+.toggle-btn.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+.toggle-btn.active span:nth-child(2) {
+    transform: rotate(120deg);
+    width: 40px;
+    height: 5px;
+}
+
+.toggle-btn.active span:nth-child(1) {
+    transform: rotate(-120deg);
+    width: 40px;
+    height: 5px;
 }
