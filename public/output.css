@@ -575,10 +575,6 @@ video {
   left: 33.333333%;
 }
 
-.z-10 {
-  z-index: 10;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -679,34 +675,6 @@ video {
   width: 75%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-7 {
   width: 1.75rem;
 }
@@ -727,24 +695,10 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-around {
-  justify-content: space-around;
-}
-
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .self-end {
@@ -753,10 +707,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-0 {
-  border-width: 0px;
 }
 
 .bg-white {
@@ -782,11 +732,6 @@ video {
 .bg-blue-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-7 {
@@ -931,298 +876,300 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-:root{
-  --background-color:rgb(5, 16, 53);
-  --background-color-opacity:rgb(12, 53, 110);
+:root {
+  --background-color: rgb(5, 16, 53);
+  --background-color-opacity: rgb(12, 53, 110);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.logo-image{
+.logo-image {
   width: 80px;
   height: 80px;
-  border-radius:50%;
-  padding:5px;
+  border-radius: 50%;
+  padding: 5px;
   -webkit-animation: logo-image 1s infinite;
           animation: logo-image 1s infinite;
 }
 
 @-webkit-keyframes logo-image {
-  0%{
+  0% {
     transform: rotate(-90deg);
   }
 
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
 @keyframes logo-image {
-  0%{
+  0% {
     transform: rotate(-90deg);
   }
 
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
-.header{
+.header {
   background-color: var(--background-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.frontpage{
-  background-color:var(--background-color-opacity);
-  position:relative ;
+.frontpage {
+  background-color: var(--background-color-opacity);
+  position: relative;
   -webkit-animation: backgroundImage 3s forwards;
           animation: backgroundImage 3s forwards;
 }
 
-@-webkit-keyframes backgroundImage{
-  0%{
+@-webkit-keyframes backgroundImage {
+  0% {
     transform: translateY(-6px);
     opacity: 0.3;
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
 
-@keyframes backgroundImage{
-  0%{
+@keyframes backgroundImage {
+  0% {
     transform: translateY(-6px);
     opacity: 0.3;
   }
 
-  100%{
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
 
-.cardSection{
+.cardSection {
   border: 2px solid black;
 }
 
-.cardSection:hover{
+.cardSection:hover {
   background-color: rgb(55, 55, 83);
-  color:#fff
+  color: #fff
 }
 
-.webuy{
-  background-color: rgb(19, 19, 152,.7);
+.webuy {
+  background-color: rgb(19, 19, 152, .7);
 }
 
-.successful{
-  background-color: rgb(19, 19, 152,.8);
+.successful {
+  background-color: rgb(19, 19, 152, .8);
 }
 
-#welcome{
+#welcome {
   -webkit-animation: welcomepage 4s forwards;
           animation: welcomepage 4s forwards;
   position: relative;
 }
 
-@-webkit-keyframes welcomepage{
-  0%{
+@-webkit-keyframes welcomepage {
+  0% {
     right: 1000px;
   }
 
-  100%{
+  100% {
     right: 0;
   }
 }
 
-@keyframes welcomepage{
-  0%{
+@keyframes welcomepage {
+  0% {
     right: 1000px;
   }
 
-  100%{
+  100% {
     right: 0;
   }
 }
 
-#contact{
+#contact {
   transition: all 1s;
 }
 
-#contact:hover{
+#contact:hover {
   transform: rotateY(180deg);
 }
 
-#cryptoimage{
+#cryptoimage {
   -webkit-animation: cryptoimage 4s forwards;
           animation: cryptoimage 4s forwards;
 }
 
-@-webkit-keyframes cryptoimage{
-  0%{
+@-webkit-keyframes cryptoimage {
+  0% {
     left: 1000px;
   }
 
-  100%{
+  100% {
     left: 0;
   }
 }
 
-@keyframes cryptoimage{
-  0%{
+@keyframes cryptoimage {
+  0% {
     left: 1000px;
   }
 
-  100%{
+  100% {
     left: 0;
   }
 }
 
-#box-one, #box-three,#box-two{
+#box-one,
+#box-three,
+#box-two {
   position: relative;
   transition: all 1s;
   border: none;
 }
 
-#box-one:hover{
+#box-one:hover {
   transform: translateY(-40px);
 }
 
-#box-three:hover{
+#box-three:hover {
   transform: translateY(-50px);
 }
 
-#box-two:hover{
+#box-two:hover {
   transform: translateY(50px);
   background-color: green;
 }
 
-#webuyone{
+#webuyone {
   position: relative;
   -webkit-animation: webuyone 4s forwards ease-out;
           animation: webuyone 4s forwards ease-out;
 }
 
 @-webkit-keyframes webuyone {
-  0%{
+  0% {
     left: 1000px;
   }
 
-  100%{
+  100% {
     left: 0;
   }
 }
 
 @keyframes webuyone {
-  0%{
+  0% {
     left: 1000px;
   }
 
-  100%{
+  100% {
     left: 0;
   }
 }
 
-#webuytwo{
+#webuytwo {
   position: relative;
   -webkit-animation: webuytwo 4s forwards ease-out;
           animation: webuytwo 4s forwards ease-out;
 }
 
-@-webkit-keyframes webuytwo{
-  0%{
+@-webkit-keyframes webuytwo {
+  0% {
     right: 1000px;
   }
 
-  100%{
+  100% {
     right: 0;
   }
 }
 
-@keyframes webuytwo{
-  0%{
+@keyframes webuytwo {
+  0% {
     right: 1000px;
   }
 
-  100%{
+  100% {
     right: 0;
   }
 }
 
-.navigationsubmain{
+.navigationsubmain {
   display: flex;
   padding: 20px;
 }
 
-.navigationsubmain li{
+.navigationsubmain li {
   margin: 0 20px;
   color: yellow;
 }
 
-.navigationsubmain li:hover{
+.navigationsubmain li:hover {
   color: white;
 }
 
-.hamburger{
-  cursor:pointer;
+.hamburger {
+  cursor: pointer;
   width: 24px;
   height: 24px;
   transition: all 0.25s;
-  position:relative;
+  position: relative;
   /* color: white; */
 }
 
 .hamburger-top,
 .hamburger-middle,
-.hamburger-bottom{
+.hamburger-bottom {
   position: absolute;
   top: 0;
   left: 0;
   width: 24x;
   height: 2px;
-  background:black ;
+  background: black;
   transform: rotate(0);
   transition: all 0.5s;
 }
 
-.hamburger-middle{
+.hamburger-middle {
   transform: translateY(7px);
 }
 
-.hamburger-bottom{
+.hamburger-bottom {
   transform: translateY(14px);
 }
 
-.open{
+.open {
   transform: rotate(90deg);
   transform: translateY(0px);
 }
 
-.open .hanburger-top{
+.open .hanburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
-.open .hamburger-middle{
-  display:none
+.open .hamburger-middle {
+  display: none
 }
 
-.open .hanburger-bottom{
+.open .hanburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
