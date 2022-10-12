@@ -34,7 +34,7 @@ body {
         transform: rotate(-90deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(90deg);
     }
 }
 
@@ -42,7 +42,8 @@ body {
     background-color: var(--background-color);
 }
 
-.frontpage {
+
+/* .frontpage {
     background-color: var(--background-color-opacity);
     position: relative;
     animation: backgroundImage 3s forwards;
@@ -57,7 +58,7 @@ body {
         transform: translateY(0px);
         opacity: 1;
     }
-}
+} */
 
 .cardSection {
     border: 2px solid black;
