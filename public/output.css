@@ -583,8 +583,8 @@ video {
   left: 75%;
 }
 
-.m-4 {
-  margin: 1rem;
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -622,14 +622,14 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mx-3 {
@@ -697,6 +697,10 @@ video {
   width: 75%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -743,6 +747,11 @@ video {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-400 {
@@ -817,6 +826,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3 {
@@ -904,7 +918,7 @@ video {
 
 :root {
   --background-color: rgb(5, 16, 53);
-  --background-color-opacity: rgb(12, 53, 110);
+  --background-color-opacity: rgb(12, 53, 110, 0.6);
 }
 
 html {
@@ -955,29 +969,19 @@ body {
   background-color: var(--background-color);
 }
 
-/* .frontpage {
-    background-color: var(--background-color-opacity);
-    position: relative;
-    animation: backgroundImage 3s forwards;
+.frontpage {
+  background-color: var(--background-color-opacity);
+  position: relative;
 }
-
-@keyframes backgroundImage {
-    0% {
-        transform: translateY(-6px);
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-} */
 
 .cardSection {
   border: 2px solid black;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
 }
 
 .cardSection:hover {
   background-color: rgb(55, 55, 83);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
   color: #fff
 }
 
@@ -1015,12 +1019,20 @@ body {
   }
 }
 
+.more {
+  display: none;
+}
+
+.mores {
+  display: flex;
+}
+
 #contact {
   transition: all 1s;
 }
 
 #contact:hover {
-  transform: rotateY(180deg);
+  transform: scale(1.4);
 }
 
 #cryptoimage {
@@ -1135,54 +1147,68 @@ body {
   color: white;
 }
 
-.hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
-  /* color: white; */
-}
-
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24x;
-  height: 2px;
-  background: black;
-  transform: rotate(0);
-  transition: all 0.5s;
-}
-
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
-.open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
-}
-
-.open .hanburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
-}
-
-.open .hamburger-middle {
-  display: none
-}
-
-.open .hanburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+.addmore {
+  transition: all 10s 10s;
 }
 
 /* mobile toggle */
+
+.custom-shape-divider-top-1665689652 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1665689652 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 164px;
+}
+
+.custom-shape-divider-top-1665689652 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+
+.custom-shape-divider-bottom-1665690054 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665690054 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-bottom-1665690054 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1665690054 svg {
+    width: calc(100% + 1.3px);
+    height: 118px;
+  }
+
+  .custom-shape-divider-top-1665689652 svg {
+    width: calc(100% + 1.3px);
+    height: 118px;
+  }
+}
 
 .toggle-btn {
   position: relative;
@@ -1205,6 +1231,25 @@ body {
   background: #fff;
   border-radius: 4px;
   transition: all 0.5s;
+}
+
+#menu.active {
+  display: flex;
+}
+
+#menu {
+  display: none;
+  color: white;
+  background: linear-gradient(to left, rgb(0, 0, 212), rgb(0, 0, 23))
+}
+
+#menu:hover {
+  background: linear-gradient(to left, rgb(11, 11, 103), rgb(101, 7, 113))
+}
+
+#menu a:hover {
+  color: black;
+  transform: scale(1.4)
 }
 
 .toggle-btn span:nth-child(1) {
